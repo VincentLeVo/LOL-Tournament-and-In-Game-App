@@ -1,0 +1,408 @@
+/*
+COLOR SWATCHES:
+2d3142 - background
+4f5d75 - more
+e0e1e1 - text
+ffffff - headers
+ef8354 - orange
+F2A07D - light orange
+ff6b6b - for delete
+*/
+
+/*=====================================
+Global Styles
+=====================================*/
+
+html {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+}
+
+body {
+  color: #e0e1e1;
+  background-color: #2d3142;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.ui {
+  width: 96%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ef8354;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 9px 7px;
+}
+
+h2 {
+  color: #f2a07d;
+  font-weight: 700;
+  margin: 9px 7px;
+}
+
+a {
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-flex-half {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/*=====================================
+Main Page Banner
+=====================================*/
+
+.banner {
+  /* background-image: rgba(0, 0, 0, 0.25),
+    url("https://esportsobserver.com/wp-content/uploads/2018/09/43859811844_acd3b01b76_k-e1536737361509.jpg"); */
+  background:
+    /* top, transparent red, faked with gradient */ linear-gradient(
+      rgba(45, 49, 66, 0.6),
+      rgba(45, 49, 66, 0.6)
+    ),
+    /* bottom, image */
+      url("https://esportsobserver.com/wp-content/uploads/2018/09/43859811844_acd3b01b76_k-e1536737361509.jpg");
+  height: 80vh;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.bannertext {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.banner h2 {
+  color: #e0e1e1;
+  font-size: 40px;
+}
+
+.banner h1 {
+  color: #e0e1e1;
+  font-size: 25px;
+}
+
+/*=====================================
+Navigation + Logo
+=====================================*/
+.header {
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.logo p {
+  color: #ef8354;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.logo p:hover {
+  color: #f2a07d;
+}
+
+.gn {
+  display: block;
+  margin-top: auto;
+  position: static;
+  margin-top: auto;
+  flex-basis: 50%;
+  max-width: 50%;
+  text-align: right;
+}
+
+.gn ul {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gn li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.gn a {
+  color: #4f5d75;
+  transition-duration: 0.4s;
+  padding: 3px;
+}
+
+.gn a:hover {
+  color: #ef8354;
+  border: 6px solid #ef8354;
+  border-radius: 0%;
+  background-color: none;
+}
+
+.gn .admin:hover {
+  color: #ff6b6b;
+  border: 6px solid #ff6b6b;
+  border-radius: 0%;
+  background-color: none;
+}
+
+/*=====================================
+Main About
+=====================================*/
+
+.about {
+  background-color: #ef8354;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about .col-sm {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about a {
+  color: #e0e1e1;
+  font-size: 100px;
+  transition-duration: 0.4s;
+}
+
+.about a:hover {
+  color: #4f5d75;
+}
+
+.about p {
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+
+.about p:hover {
+  color: #4f5d75;
+}
+
+/*=====================================
+FOOTER
+=====================================*/
+
+footer {
+  padding-top: 30px;
+  height: 150px;
+  align-items: center;
+  text-align: center;
+}
+
+/*=====================================
+Buttons / Inputs
+=====================================*/
+
+.btn {
+  border: 7px solid #e0e1e1;
+  border-radius: 0%;
+  background-color: none;
+  color: #e0e1e1;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+.btn.dark {
+  border: 7px solid #2d3142;
+  border-radius: 0%;
+  background-color: none;
+  color: #2d3142;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #4f5d75;
+  color: #4f5d75;
+}
+
+.btn.dark:hover {
+  border-color: #e0e1e1;
+  color: #e0e1e1;
+}
+
+.btn.red:hover {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+/*=====================================
+Table / Tables Themes
+=====================================*/
+.white {
+  background-color: #f2a07d;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+th,
+td {
+  color: #e0e1e1;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ef8354;
+}
+
+tr {
+  transition-duration: 0.65s;
+}
+
+tr:hover {
+  background-color: #3e475c;
+}
+
+.light th,
+.light td {
+  color: #2d3142;
+}
+
+.light th {
+  color: #2d3142;
+  background-color: #ef8354;
+}
+
+.light tr:hover {
+  background-color: #ef8354;
+}
+
+/*=====================================
+Custom Forms / Inputs
+=====================================*/
+input[type="text"] {
+  background-color: #4f5d75;
+  color: #2d3142;
+}
+
+input[type="text"]:focus {
+  background-color: #f2a07d;
+}
+
+input[type="text"]::placeholder {
+  color: #e0e1e1;
+}
+
+/*=====================================
+Main Section / Inputs
+=====================================*/
+
+/*=====================================
+Tournament Page / Inputs
+=====================================*/
+.tournament h1 {
+  text-align: center;
+}
+
+.proPlayersRegion .item {
+  flex-basis: 100%;
+  margin: auto auto;
+}
+
+.proPlayersRegion form {
+  text-align: center;
+}
+
+.participants {
+  margin: 25px 25px;
+  text-align: center;
+}
+
+.participants .item {
+  flex-basis: 100%;
+}
+
+.participants h1 {
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.esports {
+  margin: 25px 25px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.esports item {
+  flex-basis: 33%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.esports item h2 {
+  margin: 30px 20px;
+  text-align: center;
+}
+
+/*=====================================
+Vote Page
+=====================================*/
+.vote {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.vote div {
+  margin: 20px auto;
+}
+
+.vote form {
+  text-align: center;
+}
+
+.userVotes {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/*=====================================
+admin Page
+=====================================*/
+
+.adminPage {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.adminPage form {
+  text-align: center;
+}
